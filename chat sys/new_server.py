@@ -1,7 +1,7 @@
 import socket
 server=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host=socket.gethostbyname("localhost")
-port=7777
+host=socket.gethostbyname("localhost") #work on local 
+port=7777 #port number
 server.bind((host,port))
 print("server is bind")
 server.listen(10)
