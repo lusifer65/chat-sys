@@ -1,7 +1,7 @@
 import socket
 client=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host=str(socket.gethostbyname("localhost"))
-port=7777
+host=str(socket.gethostbyname("localhost")) #work on local host
+port=7777 #port number
 client.connect((host,port))
 while True:
     message=client.recv(1024)
