@@ -8,9 +8,11 @@ while True:
     print(message.decode())
     if(message.decode()=='bye'):
         client.send("bye".encode('ascii'))
-        client.close()
+        break
     else:
         client.send(input("enter messaage:-\t").encode('ascii'))
         print("message sent....")
+client.close()
+ 
 
     
